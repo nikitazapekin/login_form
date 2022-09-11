@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    min-height: 100vh;
+    align-items: center;
+    background: linear-gradient(90deg, #56e5f3, #831cf8, #ff00f2);
+}
+.form {
+    margin: 0 auto;
+    height: 100vh;
+    width: 60%;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.title {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 900;
+    padding-top: 50px;
+}
+.forms {
+    position: relative;
+    padding-top: 70px;
+    width: 80%;
+    display: block;
+    justify-content: center;
+text-align: center;
+    margin: 0 auto;
+    outline: 0;
+}
+input {
+    width: 95%;
+    height: 50px;
+    border: none;
+    float: left;
+    cursor: pointer;
+
+    font-weight: 700;
+    color: #a5a3a3;
+}
+
+
+input:active, input:hover, input:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.username, .password {
+    float: left;
+    cursor: pointer;
+}
+.forgot {
+    float: right;
+    cursor: pointer;
+}
+progress {
+    width: 98%;
+    height: 5px;
+  left: 0;
+
+}
+.btn {
+
+    width: 90%;
+    height: 50px;
+    background: linear-gradient(45deg, #56e5f3, #831cf8, #ff00f2);
+    /*background: linear-gradient(90deg, #56e5f3, #831cf8, #ff00f2);*/
+    border: none;
+    border-radius: 40px;
+    transition: 5s ease;
+    cursor: pointer;
+    color: white;
+    font-family: Roboto;
+    font-weight: 600;
+}
+.btn:hover {
+    transition: 5s ease;
+
+    background: linear-gradient(45deg, #ff00f2, #831cf8, #56e5f3);
+    background-color: red;
+
+}
+.or {
+    color: #a5a3a3;
+    text-align: center;
+}
+.icons {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 20px;
+cursor: pointer;
+}
+.i1 {
+    background-image: url("https://igorzuevich.com/wp-content/uploads/2015/03/Twitter.png");
+}
+.i2 {
+    background-image: url("https://pbs.twimg.com/media/Eou-jNOW4AASJv1.jpg");
+}
+.i3 {
+    background-image: url("https://rovesnik-zar.ru/wp-content/uploads/kak-pomenyat-familiyu-v-odnoklassnikah.png");
+}
+.icon {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.si {
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    color: #a5a3a3;
+    font-family: Roboto;
+   padding-top: 15px;
+  /*  padding-right: 120px; */
+}
+input:active {
+    resize:none;
+}
+.ey {
+    position: relative;
+  float: left;
+    top: 10px;
+}
+.ey_img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    z-index: 1111;
+
+}
+.us {
+    position: relative;
+    float: left;
+    top: 10px;
+}
+.us_img {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 8px;
+    z-index: 1111;
+
+}
+.exception {
+    position: absolute;
+   right:  0;
+    color: #f32132;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Roboto;
+    display: none;
+}
+.exception1 {
+    position: absolute;
+    right:  0;
+    color: #f32132;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Roboto;
+    display: none;
+}
+.ff {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    background: conic-gradient(red, orange, blue);
+    filter: blur(50px);
+    overflow: hidden;
+    z-index: -1;
+    animation: animate 15s linear infinite;
+}
+@keyframes animate {
+    50%{
+        transform: translateY(100px) rotate(-360deg) ;
+    }
+    100%{
+        transform: translateY(-100px) rotate(360deg);
+    }
+}
+.ff1 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: conic-gradient(red, orange, blue);
+    filter: blur(50px);
+    overflow: hidden;
+    z-index: -1;
+    animation: animate1 15s linear infinite;
+}
+@keyframes animate1 {
+    50%{
+        transform: translateY(100px) rotate(-360deg) ;
+    }
+    100%{
+        transform: translateY(-100px) rotate(360deg);
+    }
+}
+@media (max-width: 1000px) {
+    .ey_img, .us_img {
+        left: 0;
+        position: absolute;
+    }
+}
